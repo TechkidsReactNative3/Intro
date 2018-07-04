@@ -12,6 +12,7 @@ class ColorButton extends Component {
         justifyContent: 'center',
         backgroundColor: this.props.color
       }}
+        onPress={() => this.props.onPressColorButton(this.props.color)}
       >
         <Text>{this.props.color}</Text>
       </TouchableOpacity>
